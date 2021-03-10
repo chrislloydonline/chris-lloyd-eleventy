@@ -27,4 +27,12 @@ outputMessage();
 
 console.log('------------');
 console.log('Task 2 End');
+
+console.log('Task 3 Start');
+console.log('------------');
+
+outputMessage();
+
+console.log('------------');
+console.log('Task 3 End');
 </script>
