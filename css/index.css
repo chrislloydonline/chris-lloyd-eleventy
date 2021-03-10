@@ -1,30 +1,23 @@
 :root {
-  --red: #c5004a;
-  --darkred: #7f0036;
+  --red: #C5004A;
+  --darkred: #7F0036;
   --lightgray: #e0e0e0;
-  --gray: #c0c0c0;
+  --gray: #C0C0C0;
   --darkgray: #333;
-  --navy: #17050f;
+  --navy: #17050F;
   --blue: #082840;
   --white: #fff;
 }
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 html,
 body {
   padding: 0;
   margin: 0;
-
   font-family: system-ui, sans-serif;
   color: var(--darkgray);
-  background-color: var(--white);
-}
-.profile-photo {
-  width: 50%;
-  float: right;
+  background-color: var(--gray);
 }
 p:last-child {
   margin-bottom: 0;
@@ -32,7 +25,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  width: 100%;
+  max-width: 37.5em; /* 600px /16 */
 }
 p,
 .tmpl-post li {
@@ -58,7 +51,6 @@ header:after {
   display: table;
   clear: both;
 }
-
 table {
   margin: 1em 0;
 }
@@ -69,10 +61,7 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
-    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
-    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
-    "Courier New", Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
@@ -91,7 +80,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: .5em 0;
   background-color: #f6f6f6;
 }
 .highlight-line {
@@ -116,7 +105,7 @@ pre {
 }
 .highlight-line-active {
   background-color: #444;
-  background-color: hsla(0, 0%, 27%, 0.8);
+  background-color: hsla(0, 0%, 27%, .8);
 }
 .highlight-line-add {
   background-color: #45844b;
@@ -137,9 +126,6 @@ pre {
 }
 
 /* Nav */
-nav {
-  background-color: #8ac4d0;
-}
 .nav {
   padding: 0;
   list-style: none;
@@ -157,9 +143,7 @@ nav {
   font-weight: 700;
   text-decoration: underline;
 }
-.jumbotron {
-  background-color: #dbf5f7;
-}
+
 /* Posts list */
 .postlist {
   list-style: none;
@@ -195,25 +179,20 @@ nav {
   font-weight: 700;
 }
 
+
 /* Tags */
 .post-tag {
   display: inline-block;
+  vertical-align: text-top;
   text-transform: uppercase;
   font-size: 0.625em; /* 10px /16 */
-  padding: 6px 6px;
-  margin-bottom: 0.5em;
+  padding: 2px 4px;
+  margin-left: 0.8em; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
-  border-radius: 0.4em;
+  border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
-  transition: 1s;
 }
-.post-tag:hover {
-  text-decoration: none;
-  background-color: var(--darkgray);
-  transition: 1s;
-}
-
 a[href].post-tag,
 a[href].post-tag:visited {
   color: #fff;
@@ -233,7 +212,7 @@ a[href].post-tag:visited {
   font-family: sans-serif;
   text-decoration: none;
   font-style: normal;
-  margin-left: 0.1em;
+  margin-left: .1em;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
@@ -244,48 +223,4 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
-}
-
-/* footer */
-footer {
-  height: 100px;
-  padding: 3rem;
-  background-color: #8ac4d0;
-  text-align: center;
-}
-
-/* contact page form */
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-signin .checkbox {
-  font-weight: 400;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.top-contact-form-input {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.middle-contact-form-input {
-  margin-bottom: -1px;
-  border-radius: 0;
-}
-.bottom-contact-form-input {
-  margin-bottom: 20px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
