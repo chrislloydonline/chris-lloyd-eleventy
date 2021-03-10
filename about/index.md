@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+I am currently a student Junior Web Developer, learning JAMStack through The Coders Guild Bootcamp.
