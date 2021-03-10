@@ -16,16 +16,16 @@ eleventyNavigation:
 <div class="col-md-6">
 <h1 class="h1 mb-3 font-weight-normal">Contact Information</h1>
 <br />
-<h2 class="h2 mb-3 font-weight-normal">Gary Tate</h2>
+<h2 class="h2 mb-3 font-weight-normal">Chris Lloyd</h2>
 <br />
 <h4 class="h4 mb-3 font-weight-normal">Address</h4>
-<p>468 Green Avenue <br />West Yorkshire <br /> WF43 9PO </p>
+<p>Dewsbury <br />Leeds <br /> West Yorkshire</p>
 <br />
 <h4 class="h4 mb-3 font-weight-normal">Email Address</h4>
-<p>garytatelufc@gmail.com </p>
+<p>christopherlloyd29@outlook.com</p>
 <br />
 <h4 class="h4 mb-3 font-weight-normal">Phone Number</h4>
-<p>07123 123 123 </p>
+<p>07857 596694</p>
 </div>
 <!-- contact form -->
 <div class="col-md-6">
